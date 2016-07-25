@@ -7,6 +7,7 @@ function getTriggers(callback) {
   });
 }
 
+// Removes a trigger
 function removeTrigger(key) {
   getTriggers(function (items) {
 
@@ -35,7 +36,6 @@ function updateView(triggers) {
 
   $('#triggers a').click(function() {
     var key = this.getAttribute('data-key');
-    console.log(key);
     removeTrigger(key);
   });
 }
@@ -68,6 +68,3 @@ function saveOptions() {
 function restoreOptions() {
   getTriggers(updateView);
 }
-
-document.addEventListener('DOMContentLoaded', restoreOptions);
-document.getElementById('save').addEventListener('click', saveOptions);

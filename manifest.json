@@ -9,8 +9,8 @@
   },
   "content_scripts": [
    {
-    "matches": ["http://rundeck.iadvize.net:4440/project/Deploy/execution/show/*"],
-    "js": ["jquery-3.1.0.min.js", "observer.js"]
+    "matches": ["<all_urls>"],
+    "js": ["jquery-3.1.0.min.js", "lib.js", "observer.js"]
    }
  ],
   "permissions": [

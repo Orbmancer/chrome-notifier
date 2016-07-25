@@ -2,7 +2,6 @@ var notificationsContext = [];
 
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
-    console.log(sender);
     chrome.notifications.create('notification.warning', {
       iconUrl: sender.tab.favIconUrl,
       title: sender.tab.title,
@@ -17,5 +16,5 @@ chrome.runtime.onMessage.addListener(
 
 // redirects on the tab on notification click
 chrome.notifications.onClicked.addListener(function (notificationId) {
-  chrome.tabs.update(notificationsContext[notificationId], {selected: true});
-})
+  chrome.tabs.update(notificationsContext[notificationId].tab, {selected: true});
+});

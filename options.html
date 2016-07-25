@@ -1,16 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head><title>chrome-notifier options</title></head>
+<head>
+  <title>chrome-notifier options</title>
+  <link href="bootstrap.min.css" rel="stylesheet" type="text/css"></link>
+</head>
 <body>
+<div class="container text-center">
+  <h1><a href="https://github.com/Orbmancer/chrome-notifier">Chrome Notifier</a></h1>
+  <p>
+    Let chrome notify you when changes happen on elements you track
+  </p>
 
-<input type="text" id="url" placeholder="URL pattern" />
-<input type="text" id="selector" placeholder="CSS element selector" />
-<input type="submit" id="save" value="Add" />
+  <br/><br/>
 
-<h2>Active triggers</h2>
-<ul id="triggers"></ul>
+  <h3>Add a trigger</h3>
+  <input type="text" id="url" placeholder="URL pattern" />
+  <input type="text" id="selector" placeholder="CSS element selector" />
+  <input type="submit" id="save" value="Add" class="btn btn-success" />
+
+  <h3>Active triggers</h3>
+  <div id="triggers"></div>
+
+  <br/><br/>
+  <hr/>
+  <br/>
+
+  <a href="http://www.damien-bry.com" target="_blank">Made with <span class="glyphicon glyphicon-heart"></span> by Damien Bry</a>
+</div>
 
 <script src="jquery-3.1.0.min.js"></script>
+<script src="lib.js"></script>
 <script src="options.js"></script>
 </body>
 </html>

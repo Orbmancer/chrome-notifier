@@ -3,7 +3,7 @@ Let chrome notify you when changes happen on elements you track
 
 ## Installation
 
-Download the extension from the chrome store
+Download the extension from the chrome store: https://chrome.google.com/webstore/detail/chrome-notifier/acieenleahhcplheinjihejdgapcbaga
 
 ## How to use
 
